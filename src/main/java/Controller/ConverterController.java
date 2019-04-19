@@ -14,7 +14,7 @@ public class ConverterController {
     return "index";
 }
 @PostMapping("/converter")
-    public String converter(double usd,double rate,Model model){
+    public String converter(@RequestParam double usd,@RequestParam double rate,Model model){
     model.addAttribute("usd",usd);
     model.addAttribute("rate",rate);
     double vnd=usd*rate;

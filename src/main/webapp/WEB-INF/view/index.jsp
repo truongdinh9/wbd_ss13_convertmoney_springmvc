@@ -16,11 +16,11 @@
   <form method="post" action="/converter" >
     USD:
     <br/>
-    <input type="number" name="usd" value="${usd}">
+    <input type="number" name="usd" value="${usd}" required>
     <br/>
-    Rate:k
+    Rate:
     <br/>
-    <input type="number" name="rate" value="${rate}">
+    <input type="number" name="rate" value="${rate}" required>
     <br/>
     <input type="submit" value="Convert">
     <br/>
